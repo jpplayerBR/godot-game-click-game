@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://pepcoiqgglg4"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_yeawv"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yeawv")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 37.0
+offset_right = 600.0
+offset_bottom = 107.0
+text = "nao click aqui  ou vai ganhar um iphone ok"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 197.0
+offset_right = 613.0
+offset_bottom = 319.0
+text = "click aqui seu teimoso para ganhar seu iphone"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

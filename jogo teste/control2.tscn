@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4klahxaknjet"]
+
+[ext_resource type="Script" path="res://control2.gd" id="1_l8mi7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l8mi7")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 81.0
+offset_right = 556.0
+offset_bottom = 144.0
+text = "voce e corioso ne to avisado nao click aqui "
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 245.0
+offset_right = 506.0
+offset_bottom = 354.0
+text = "nao click aqui por favor"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

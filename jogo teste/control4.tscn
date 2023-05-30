@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhpqosevu21po"]
+
+[ext_resource type="Script" path="res://control4.gd" id="1_jx5e8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jx5e8")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 213.0
+offset_right = 562.0
+offset_bottom = 293.0
+text = "click aqui voce venceu"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 32.0
+offset_right = 528.0
+offset_bottom = 139.0
+text = "voce venceu voce ganhou 
+100000 reais de  graça
+obrigado por jogar "
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
